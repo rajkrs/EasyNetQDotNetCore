@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
+    <UserSecretsId>6baaab7e-e3b5-4982-b30b-76deb74f8ca4</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="EasyNetQ" Version="3.5.0" />
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.7.9" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Order.Models\Order.Service.Models.csproj" />
+    <ProjectReference Include="..\Order.Publisher\Order.Service.Publisher.csproj" />
+    <ProjectReference Include="..\Order.Service.Provider\Order.Service.Provider.csproj" />
+    <ProjectReference Include="..\Shopping.Common\Shopping.Common.csproj" />
+  </ItemGroup>
+
+</Project>

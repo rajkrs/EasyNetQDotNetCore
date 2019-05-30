@@ -1,0 +1,13 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Order.Models\Order.Service.Models.csproj" />
+    <ProjectReference Include="..\Order.Publisher\Order.Service.Publisher.csproj" />
+    <ProjectReference Include="..\Shopping.Common\Shopping.Common.csproj" />
+  </ItemGroup>
+
+</Project>
